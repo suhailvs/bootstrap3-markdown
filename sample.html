@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <title>Bootstrap 101 Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+   	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0-wip/css/bootstrap.min.css"> 
+	<link href="jquery.pagedown-bootstrap.css" rel="stylesheet">
+ 	<link href="bootstrap3markdown.css" rel="stylesheet">
+</head>
+<body>
+	<textarea id="pagedownMe">
+	This is the *first* editor.
+	------------------------------
+	 
+	Just plain **Markdown**, except that the input is sanitized:
+	 
+	<marquee>I'm the ghost from the past!</marquee>
+	</textarea>
+
+	<script src="//code.jquery.com/jquery.js"></script>
+	<script type="text/javascript" src="jquery.pagedown-bootstrap.min.js"></script>
+	<!-- Le lift -->
+	<script type="text/javascript">
+	(function () {
+	 
+		$("textarea#pagedownMe").pagedownBootstrap();
+	 
+	})();
+	</script>
+</body>
+</html>
