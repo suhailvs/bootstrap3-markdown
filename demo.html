@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html>
  <head>
-    <title>Bootstrap 101 Template</title>
+    <title>Bootstrap3-markdown</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
-   	<link rel="stylesheet" href="http://getbootstrap.com/dist/css/bootstrap.min.css"> 
-	<link href="jquery.pagedown-bootstrap.css" rel="stylesheet">
- 	<link href="bootstrap3markdown.css" rel="stylesheet">
+   	<link rel="stylesheet" href="http://getbootstrap.com/dist/css/bootstrap.min.css">
+   	<style type="text/css">
+   		.wmd-panel{width:100%; border:5px solid #ccc; padding: 5px}
+		.wmd-input{height:300px;width:100%;}
+		.wmd-preview{width:100%;border-top:5px solid #ccc;}
+	</style> 
 </head>
 <body>
 <div class="container">
-	<textarea class="form-control" rows="15" id="pagedownMe">
+	<textarea id="pagedownMe">
 This is the *first* editor.
 ------------------------------
 Just plain **Markdown**, except that the `input` is sanitized:  
@@ -61,7 +64,7 @@ an image:
 
 </div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-	<script type="text/javascript" src="jquery.pagedown-bootstrap.min.js"></script>
+	<script type="text/javascript" src="jquery.pagedown-bootstrap.js"></script>
 	<!-- Le lift -->
 	<script type="text/javascript">
 	(function () {	 
